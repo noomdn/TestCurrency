@@ -20,6 +20,14 @@
 		F505A59229886A2B00E17545 /* TestCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505A59129886A2B00E17545 /* TestCurrencyTests.swift */; };
 		F505A59C29886A2B00E17545 /* TestCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505A59B29886A2B00E17545 /* TestCurrencyUITests.swift */; };
 		F505A59E29886A2B00E17545 /* TestCurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F505A59D29886A2B00E17545 /* TestCurrencyUITestsLaunchTests.swift */; };
+		F58DD261298876630072A1A2 /* MarketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DD260298876630072A1A2 /* MarketTableViewController.swift */; };
+		F58DD266298876A20072A1A2 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DD265298876A20072A1A2 /* CustomTableViewController.swift */; };
+		F58DD2692988774A0072A1A2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DD2682988774A0072A1A2 /* APIService.swift */; };
+		F58DD26C298877A20072A1A2 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DD26B298877A20072A1A2 /* MarketViewModel.swift */; };
+		F58DD270298878020072A1A2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DD26F298878020072A1A2 /* CustomCell.swift */; };
+		F58DD2742988784F0072A1A2 /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DD2722988784F0072A1A2 /* MarketTableViewCell.swift */; };
+		F58DD2752988784F0072A1A2 /* MarketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58DD2732988784F0072A1A2 /* MarketTableViewCell.xib */; };
+		F58DD277298879AA0072A1A2 /* MarketCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DD276298879AA0072A1A2 /* MarketCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +71,14 @@
 		F505A59729886A2B00E17545 /* TestCurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F505A59B29886A2B00E17545 /* TestCurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCurrencyUITests.swift; sourceTree = "<group>"; };
 		F505A59D29886A2B00E17545 /* TestCurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F58DD260298876630072A1A2 /* MarketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewController.swift; sourceTree = "<group>"; };
+		F58DD265298876A20072A1A2 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		F58DD2682988774A0072A1A2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F58DD26B298877A20072A1A2 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		F58DD26F298878020072A1A2 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		F58DD2722988784F0072A1A2 /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		F58DD2732988784F0072A1A2 /* MarketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketTableViewCell.xib; sourceTree = "<group>"; };
+		F58DD276298879AA0072A1A2 /* MarketCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +129,6 @@
 				74333AD202E55C95D7AF1816 /* Pods-TestCurrencyTests.debug.xcconfig */,
 				5DC1AABB45F2162F3E47EFDE /* Pods-TestCurrencyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +157,10 @@
 		F505A57629886A2800E17545 /* TestCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				F58DD26E298877F30072A1A2 /* Template */,
+				F58DD2672988772B0072A1A2 /* Services */,
+				F58DD2622988767C0072A1A2 /* Helper */,
+				F58DD25E2988762C0072A1A2 /* Screens */,
 				F505A57729886A2800E17545 /* AppDelegate.swift */,
 				F505A57929886A2800E17545 /* SceneDelegate.swift */,
 				F505A57B29886A2800E17545 /* ViewController.swift */,
@@ -169,6 +188,90 @@
 				F505A59D29886A2B00E17545 /* TestCurrencyUITestsLaunchTests.swift */,
 			);
 			path = TestCurrencyUITests;
+			sourceTree = "<group>";
+		};
+		F58DD25E2988762C0072A1A2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD25F298876370072A1A2 /* Market View */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F58DD25F298876370072A1A2 /* Market View */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD26A298877920072A1A2 /* ViewModel */,
+				F58DD260298876630072A1A2 /* MarketTableViewController.swift */,
+			);
+			path = "Market View";
+			sourceTree = "<group>";
+		};
+		F58DD2622988767C0072A1A2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD263298876820072A1A2 /* Custom */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F58DD263298876820072A1A2 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD26D298877D70072A1A2 /* Custom TableViewCell */,
+				F58DD264298876880072A1A2 /* Custom TableView */,
+				F58DD26F298878020072A1A2 /* CustomCell.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		F58DD264298876880072A1A2 /* Custom TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD265298876A20072A1A2 /* CustomTableViewController.swift */,
+			);
+			path = "Custom TableView";
+			sourceTree = "<group>";
+		};
+		F58DD2672988772B0072A1A2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD2682988774A0072A1A2 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F58DD26A298877920072A1A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD26B298877A20072A1A2 /* MarketViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F58DD26D298877D70072A1A2 /* Custom TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD276298879AA0072A1A2 /* MarketCustomCell.swift */,
+			);
+			path = "Custom TableViewCell";
+			sourceTree = "<group>";
+		};
+		F58DD26E298877F30072A1A2 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD271298878370072A1A2 /* Market TableViewCell */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		F58DD271298878370072A1A2 /* Market TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F58DD2722988784F0072A1A2 /* MarketTableViewCell.swift */,
+				F58DD2732988784F0072A1A2 /* MarketTableViewCell.xib */,
+			);
+			path = "Market TableViewCell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +386,7 @@
 				F505A58729886A2A00E17545 /* LaunchScreen.storyboard in Resources */,
 				F505A58429886A2A00E17545 /* Assets.xcassets in Resources */,
 				F505A57F29886A2900E17545 /* Main.storyboard in Resources */,
+				F58DD2752988784F0072A1A2 /* MarketTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,9 +514,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58DD26C298877A20072A1A2 /* MarketViewModel.swift in Sources */,
+				F58DD261298876630072A1A2 /* MarketTableViewController.swift in Sources */,
+				F58DD2692988774A0072A1A2 /* APIService.swift in Sources */,
+				F58DD2742988784F0072A1A2 /* MarketTableViewCell.swift in Sources */,
 				F505A58229886A2900E17545 /* TestCurrency.xcdatamodeld in Sources */,
 				F505A57C29886A2900E17545 /* ViewController.swift in Sources */,
+				F58DD270298878020072A1A2 /* CustomCell.swift in Sources */,
 				F505A57829886A2800E17545 /* AppDelegate.swift in Sources */,
+				F58DD266298876A20072A1A2 /* CustomTableViewController.swift in Sources */,
+				F58DD277298879AA0072A1A2 /* MarketCustomCell.swift in Sources */,
 				F505A57A29886A2800E17545 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
